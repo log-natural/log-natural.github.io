@@ -216,11 +216,16 @@ img { max-width: 100%; display: block; }
   background: #edf4f0;
   color: #4e5d57;
 }
-.markdown-body figure { margin: 34px 0; }
+.markdown-body figure {
+  margin: 34px 0;
+}
+
 .markdown-body figure img {
+  display: block;
   width: auto;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
   border: 1px solid var(--line);
 }
 .markdown-body figcaption { margin-top: 7px; color: var(--muted); text-align: center; font-size: .78rem; }
