@@ -2,7 +2,7 @@
 title: 이모지 랜덤 뽑기
 date: 2026-06-11
 category: Web
-thumbnail: https://ifh.cc/v-2Xglg7
+thumbnail: https://i.ifh.cc/2Xglg7.png
 tags:
   - web
 description: 선택한 카테고리별로 이모지를 랜덤으로 골라주는 프로그램입니다.
