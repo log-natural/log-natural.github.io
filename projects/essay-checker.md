@@ -22,4 +22,4 @@ ChatGPT 5.6을 사용하여 프론트엔드&백엔드 제작했습니다.
 ## 링크
 
 - [GitHub](https://github.com/log-natural/essay-checker)
-- [Web](https://essay-checker-frontend.onrender.com/)
+- [Web](https://essaychecker.kro.kr/)
