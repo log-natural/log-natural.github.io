@@ -11,10 +11,14 @@ function escapeHtml(value = "") {
 }
 
 async function getJson(path) {
-  const response = await fetch(`./${project.file}?v=${Date.now()}`, {
+  const response = await fetch(`./${path}?v=${Date.now()}`, {
     cache: "no-store"
   });
-  if (!response.ok) throw new Error(`Failed to load ${path}`);
+
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path}: ${response.status}`);
+  }
+
   return response.json();
 }
 
@@ -168,7 +172,14 @@ async function loadProfile() {
 async function loadProjects() {
   const entries = await getJson("./data/projects.json");
   const projects = await Promise.all(entries.map(async entry => {
-    const response = await fetch(`./${entry.file}`);
+    const response = await fetch(`./${entry.file}?v=${Date.now()}`, {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to load ${entry.file}: ${response.status}`);
+    }
+
     const markdown = await response.text();
     const parsed = parseFrontMatter(markdown);
     return { ...entry, ...parsed.data, body: parsed.body };
