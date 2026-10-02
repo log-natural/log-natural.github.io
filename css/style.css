@@ -197,7 +197,7 @@ img { max-width: 100%; display: block; }
 .article-cover img {
   display: block;
   width: auto;
-  max-width: 100%;
+  max-width: 50%;
   max-height: 500px;
   height: auto;
   object-fit: contain;
