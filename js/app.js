@@ -11,7 +11,9 @@ function escapeHtml(value = "") {
 }
 
 async function getJson(path) {
-  const response = await fetch(path);
+  const response = await fetch(`./${project.file}?v=${Date.now()}`, {
+    cache: "no-store"
+  });
   if (!response.ok) throw new Error(`Failed to load ${path}`);
   return response.json();
 }
