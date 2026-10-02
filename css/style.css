@@ -194,7 +194,15 @@ img { max-width: 100%; display: block; }
   margin: 0 calc(50% - 50vw) 54px;
   background: #e9eeeb;
 }
-.article-cover img { width: 100%; max-height: 680px; object-fit: cover; margin: auto; }
+.article-cover img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 500px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
 
 .markdown-body { max-width: 760px; margin: 0 auto; }
 .markdown-body h1, .markdown-body h2, .markdown-body h3 {
