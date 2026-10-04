@@ -5,6 +5,7 @@ category: Web
 thumbnail: https://i.ifh.cc/2Xglg7.png
 tags:
   - web
+  - HTML
 description: 선택한 카테고리별로 이모지를 랜덤으로 골라주는 프로그램입니다.
 ---
 
@@ -21,3 +22,4 @@ description: 선택한 카테고리별로 이모지를 랜덤으로 골라주는
 ## 링크
 
 - [GitHub](https://github.com/log-natural/emojipick)
+- [Web](https://emojipick.onrender.com/)
